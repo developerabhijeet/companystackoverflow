@@ -59,6 +59,14 @@ class Form extends Component {
 
     );
   }
+  renderInputP(name, label) {
+    const { data, errors } = this.state;
+    return (
+
+      <Input name={name} value={data[name]} label={label} errors={errors[name]} />
+
+    );
+  }
 
   renderButtonP(label) {
     return (
