@@ -19,9 +19,9 @@ class ProblemSection extends Form{
       <div>
         <h1>Post Your Problem</h1>
         <form>
-          {this.renderInput("problem", "Type your Problem")}
+          {this.renderInputP("problem", "Type your Problem")}
           <br/>
-          {this.renderInput("domain", "Type your Programming Language", "text")}
+          {this.renderInputP("domain", "Type your Programming Language", "text")}
           <br/>
           {this.renderButtonP("POST")}
 
