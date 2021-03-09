@@ -3,29 +3,27 @@ import { Joi } from 'joi-browser';
 import Form from '../Forms/Form';
 
 class ProblemSection extends Form{
-  state={
-    data:{problem: "", domain: ""},
+  constructor(){
+    super();
+  const state={
+    data1:{problem: "", domain: ""},
     errors: {}
   };
-  schema={
-    problem: Joi.string()
-    .required()
-    .label("Type your Problem"),
+  const schema={
 
-    domain: Joi.string()
-    .required()
-    .label("Type your Programming Language")
-  };
-  
+  }
+};
+ 
   render(){
     return(
       <div>
         <h1>Post Your Problem</h1>
         <form>
-          {this.renderTextField("problem", "Type your Problem")}
+          {this.renderInput("problem", "Type your Problem")}
+          <br/>
           {this.renderInput("domain", "Type your Programming Language", "text")}
           <br/>
-          {this.renderButton("POST")}
+          {this.renderButtonP("POST")}
 
         </form>
       </div>

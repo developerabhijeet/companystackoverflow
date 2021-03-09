@@ -8,8 +8,8 @@ class Form extends Component {
     super(props);
     this.state = {
       data: {},
-      data1 = {},
-,      errors: {},
+      data1 : {},
+            errors: {},
     
     };
   }
@@ -55,19 +55,19 @@ class Form extends Component {
     const { data, errors } = this.state;
     return (
 
-      <Input name={name} value={data[problem]} label={label} onChange={this.handleChange} errors={errors[name]} />
+      <Input name={name} value={data[name]} label={label} onChange={this.handleChange} errors={errors[name]} />
 
     );
   }
 
-  renderTextField(name, label) {
-    const { data, errors } = this.state;
+  renderButtonP(label) {
     return (
-
-      <TextField name={name} value={data[name]} label={label} errors={errors[name]} />
+      <button className="btn btn-primary">{label}</button>
 
     );
   }
+
+
 }
 export default Form;
 
