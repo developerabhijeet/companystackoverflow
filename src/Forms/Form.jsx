@@ -9,7 +9,7 @@ class Form extends Component {
     this.state = {
       data: {},
       data1 = {},
-,      errors: {},
+      errors: {},
     
     };
   }
