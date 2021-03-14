@@ -8,7 +8,7 @@ class Form extends Component {
     super(props);
     this.state = {
       data: {},
-      data1 = {},
+      data1 : {},
       errors: {},
     
     };
